@@ -1,5 +1,13 @@
 import Game from '../components/game/Game';
+import Head from 'next/head';
 
-const GamePage = () => <Game />;
+const GamePage = () => {
+    return <>
+        <Head>
+            <title>Typepractice</title>
+        </Head>
+        <Game />
+    </>
+};
 
 export default GamePage;

@@ -10,17 +10,17 @@ const Home = () => {
         <title>Typepractice</title>
       </Head>
 
-      <Center hegith="100%">
+      <Center mt={20}>
         <Stack>
-          <Heading>
-            Welcome to Typepractice
-        </Heading>
-          <Center>
-            <Link href="/game" style={{ margin: '2rem' }}>
-              <Button color="primary">Play</Button>
+          <Heading as="h1" size="2xl">
+            Welcome to TypePractice
+          </Heading>
+          <Center mt={10}>
+            <Link href="/game">
+              <Button colorScheme="blue" mx={5} size="lg">Play</Button>
             </Link>
-            <Link href="">
-              <Button>Register</Button>
+            <Link href="" mx={5}>
+              <Button size="lg">Register</Button>
             </Link>
           </Center>
         </Stack>
