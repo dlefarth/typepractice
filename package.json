@@ -17,6 +17,8 @@
     "beautiful-react-hooks": "^0.30.5",
     "emotion-theming": "^10.0.27",
     "framer-motion": "^3.7.0",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.18",
     "next": "10.0.5",
     "query-string": "^6.13.6",
     "react": "17.0.1",
