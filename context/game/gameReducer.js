@@ -1,4 +1,5 @@
-import {INCREASE_EXPIRED_TIME, SET_INPUT_TEXT, SET_TEXT, START_GAME} from '../actions';
+import { INCREASE_EXPIRED_TIME, SET_INPUT_TEXT, SET_TEXT, START_GAME } from '../actions';
+import axios from 'axios';
 
 export default (state, action) => {
     switch (action.type) {
@@ -7,8 +8,9 @@ export default (state, action) => {
             const firstTypoAt = findFirstMismatchingCharacter(inputText, state.text);
             const visibleInputText = calculateVisibleInputText(action.payload, firstTypoAt);
             const gameState = updateGameState(inputText, state.text, firstTypoAt);
-            if (gameState === 'FINISHED') clearInterval(state.intervalRef);
-
+            if (gameState === 'FINISHED') {
+                clearInterval(state.intervalRef);
+            }
             return {
                 ...state,
                 visibleInputText,

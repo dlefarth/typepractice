@@ -11,5 +11,7 @@ const ScoreSchema = mongoose.Schema({
     }
 });
 
+mongoose.models = {};
+
 export default mongoose.model('Score', ScoreSchema);
 

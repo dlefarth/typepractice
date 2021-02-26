@@ -38,8 +38,7 @@ const Game = () => {
     }, 1000);
 
     useEffect(() => {
-        loadText()
-        // eslint-disable-next-line
+        loadText();
     }, []);
 
     const speed = calculateCurrentSpeedInWPM();

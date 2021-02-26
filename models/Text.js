@@ -1,4 +1,3 @@
-import { MongoServerSelectionError } from 'mongodb';
 import mongoose from 'mongoose';
 
 const TextSchema = mongoose.Schema({
