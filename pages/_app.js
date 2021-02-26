@@ -1,11 +1,11 @@
 import { ThemeProvider, CSSReset, ColorModeProvider } from '@chakra-ui/core'
 import GameState from '../context/game/GameState';
-import AuthState from '../context/auth/AuthState';
 import Header from '../components/shared/Header';
+import { UserProvider } from '@auth0/nextjs-auth0';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AuthState>
+    <UserProvider>
       <ColorModeProvider>
         <ThemeProvider>
           <CSSReset />
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
           </GameState>
         </ThemeProvider>
       </ColorModeProvider>
-    </AuthState>
+    </UserProvider>
   );
 }
 
