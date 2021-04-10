@@ -1,7 +1,5 @@
-import { Button } from '@chakra-ui/core';
+import { Text, Stack, Button } from '@chakra-ui/react';
 import React from 'react';
-import Text from '@chakra-ui/core/dist/Text';
-import Stack from '@chakra-ui/core/dist/Stack';
 import { useUser } from '@auth0/nextjs-auth0';
 import axios from 'axios';
 
