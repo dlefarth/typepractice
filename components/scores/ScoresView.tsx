@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import useScores from "../hooks/useScores";
+import useScores from "../../api-hooks/useScores";
 import AvgScore from "./AvgScore";
 import ScoreChart from "./ScoreChart";
 

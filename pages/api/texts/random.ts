@@ -1,5 +1,5 @@
-import connectDB from '../../middleware/mongodb';
-import Text from '../../models/Text';
+import connectDB from '../../../middleware/mongodb';
+import Text from '../../../models/Text';
 
 const handler = async (req, res) => {
     const texts = await Text.aggregate([{ $sample: { size: 1 } }]);

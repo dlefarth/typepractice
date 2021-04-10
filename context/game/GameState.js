@@ -30,7 +30,7 @@ const QuizState = props => {
     };
 
     const loadText = async () => {
-        const res = await axios.get('/api/text');
+        const res = await axios.get('/api/texts/random');
         const text = res.data.text;
         dispatch({ type: SET_TEXT, payload: text });
     }
