@@ -48,7 +48,7 @@ const NavLinks: React.FC = () => {
   return (
     <>
       {links.map(({ href, title }) => (
-        <Link href={href}>
+        <Link href={href} key={href}>
           <Button variant="ghost" _hover={{ bg: "teal.500" }}>
             {title}
           </Button>
