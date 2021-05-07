@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import React from "react";
 import useScores from "../../api-hooks/useScores";
 import AvgScore from "./AvgScore";
@@ -10,10 +10,11 @@ const ScoresView: React.FC = () => {
   if (isLoading) return <></>;
 
   return (
-    <Box>
+    <>
+      <Heading mb=".5rem">Scores</Heading>
       <AvgScore data={data} />
       <ScoreChart data={data} />
-    </Box>
+    </>
   );
 };
 

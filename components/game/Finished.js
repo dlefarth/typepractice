@@ -15,7 +15,7 @@ const Finished = ({ result }) => {
         saveScore(result);
     }
 
-    return <Stack width={800} marginX="auto" marginTop={200}>
+    return <Stack width={800} marginX="auto" marginTop={200} alignItems="center">
         <Text fontSize="6xl" color="teal.400" textAlign="center">
             {result}WPM
         </Text>

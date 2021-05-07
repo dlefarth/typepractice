@@ -10,6 +10,7 @@ import {
   MenuList,
   Text,
   Box,
+  Container,
 } from "@chakra-ui/react";
 import React from "react";
 import Link from "next/link";
@@ -19,22 +20,20 @@ const Navigation: React.FC = () => {
   const { user } = useUser();
 
   return (
-    <Flex
-      as="nav"
-      justify="space-between"
-      bg="teal.400"
-      color="white"
-      padding="1rem"
-    >
-      <Heading as="h2" size="lg">
-        TypePractice
-      </Heading>
+    <Box as="nav" bg="teal.400" color="white">
+      <Container maxW="container.xl">
+        <Flex justify="space-between" py="1rem">
+          <Heading as="h2" size="lg">
+            TypePractice
+          </Heading>
 
-      <Box>
-        <NavLinks />
-        {user ? <UserInfo user={user} /> : <LoginButton />}
-      </Box>
-    </Flex>
+          <Box>
+            <NavLinks />
+            {user ? <UserInfo user={user} /> : <LoginButton />}
+          </Box>
+        </Flex>
+      </Container>
+    </Box>
   );
 };
 

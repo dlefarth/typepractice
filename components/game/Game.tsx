@@ -59,26 +59,24 @@ const Game: React.FC = () => {
         isOpen={gameState === "WAITING"}
         countdown={startCountdown}
       />
-      <Box width={800} marginX="auto" marginTop={50}>
-        <Stack spacing={3} padding={3}>
-          <Box display="flex" justifyContent="start" flexDir="row-reverse">
-            <Text fontSize="sm">WPM: {speed || 0}</Text>
-          </Box>
-          <TextRenderer
-            text={text}
-            currentPosition={currentPosition}
-            firstTypoAt={firstTypoAt}
-          />
-          <Input
-            disabled
-            ref={inputRef}
-            size="lg"
-            shadow="5px 5px 10px #CCC"
-            value={visibleInputText}
-            onChange={(event) => setInputText(event.target.value)}
-          />
-        </Stack>
-      </Box>
+      <Stack spacing={3} padding={3}>
+        <Box display="flex" justifyContent="start" flexDir="row-reverse">
+          <Text fontSize="sm">WPM: {speed || 0}</Text>
+        </Box>
+        <TextRenderer
+          text={text}
+          currentPosition={currentPosition}
+          firstTypoAt={firstTypoAt}
+        />
+        <Input
+          disabled
+          ref={inputRef}
+          size="lg"
+          shadow="5px 5px 10px #CCC"
+          value={visibleInputText}
+          onChange={(event) => setInputText(event.target.value)}
+        />
+      </Stack>
     </>
   );
 };
