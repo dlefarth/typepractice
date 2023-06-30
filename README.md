@@ -1,3 +1,3 @@
 # TypePractice
 
-play at https://typepractice-new.vercel.app/ 
+[play](https://typepractice-new-git-master-dlefarth.vercel.app)
